@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Swap</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Token Swap DApp</h1>
+        <button id="connectWallet" disabled>Connect Wallet</button>
+        <p id="walletAddress">Not Connected</p>
+
+        <label for="amount">Amount to Swap:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <button id="swap1to2" disabled>Swap Selene for Caracol</button>
+        <button id="swap2to1" disabled>Swap Caracol for Selene</button>
+
+        <h2>Set Exchange Rate (Owner Only)</h2>
+        <label for="rate1to2">Rate 1 Selene =</label>
+        <input type="number" id="rate1to2" placeholder="Token2 Amount">
+        <label for="rate2to1">Rate 1 Caracol =</label>
+        <input type="number" id="rate2to1" placeholder="Token1 Amount">
+        <button id="setRate" disabled>Update Exchange Rate</button>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
